@@ -9,7 +9,8 @@ function getTranslationUrl(input){
 }
 
 function errorHandler(error){
-
+    console.log("error occured" , error);
+    alert("Something is wrong with the server! Please try again after sometimes.");
 }
 
 function clickHandler(){
@@ -20,6 +21,7 @@ function clickHandler(){
         var transalatedText = json.contents.translated;
         divOutput.innerText = transalatedText;
     })
+    .catch(errorHandler);
 };
 
 btnTranslate.addEventListener("click", clickHandler);

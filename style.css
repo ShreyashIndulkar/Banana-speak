@@ -1,15 +1,76 @@
+:root{
+    --box-color: #0A75BC;
+    --text-color: #FFFFFF;
+}
+
+body{
+    background-color: #FCE029;
+    margin: 0px;
+}
+
+
 #txt-input{
-    width: 90%;
+    border-radius: 5rem;
+    width: 100%;
     height: 10vh;
     display: block;
     margin: 1rem;
-    padding: 1rem;
+    padding: 2rem;
+    color: var(--box-color);
 }
 
 #output{
     border: 1px solid black;
+    border-radius: 5rem;
+    background-color: white;
     height: 10vh;
-    width: 90%;
+    width: 99%;
     margin: 1rem;
-    padding: 1rem;
+    padding: 2rem;
+    color: var(--box-color);
+}
+
+header{
+    padding-inline-start: 0px;
+    height: 8vh;
+    text-align: center;
+    background-color: var(--box-color);
+    color: var(--text-color);
+}
+
+button{
+    background-color: #231F20;
+    color: #FCE029;
+    height: 4vh;
+}
+
+h1{
+    padding-top: 1rem;
+}
+
+footer{
+    padding-inline-start: 0px;
+    padding-top: 0.7rem;
+    height: 8vh;
+    text-align: center;
+    background-color: var(--box-color);
+    color: var(--text-color);
+    text-align: center;
+    color: var(--text-color);
+}
+
+.link{
+    color: var(--text-color);
+}
+
+.list-non-bullet{
+    list-style: none;
+}
+
+.output-box{
+    margin-right: 4.6rem;
+}
+
+.input-box{
+    margin-right: 5.7rem;
 }
